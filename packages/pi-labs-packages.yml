@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/withpi
+packages:
+  - language: typescript
+    registry: npm
+    name: withpi
+    url: https://www.npmjs.com/package/withpi
+    install: npm install withpi
+    repository: https://github.com/withpi/sdk-node
+    license: Apache-2.0
+    official: true
+    description: The official TypeScript library for the Pi Client (Pi Labs) API. Sync/async access to the scoring, calibration, and optimization endpoints.
+  - language: python
+    registry: pypi
+    name: withpi
+    url: https://pypi.org/project/withpi/
+    install: pip install withpi
+    license: Apache-2.0
+    requires_python: ">=3.8"
+    official: true
+    description: The official Python library for the Pi Client (Pi Labs) REST API. Synchronous and asynchronous clients powered by httpx, with full type definitions.

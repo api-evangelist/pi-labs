@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: searched
+source: https://code.withpi.ai/introduction
+docs: https://code.withpi.ai
+summary: >-
+  Cross-cutting request/response conventions for the Pi Labs (Pi Client) REST
+  API, captured from the developer docs and the official SDKs. The API is an
+  OpenAPI-compatible JSON/HTTPS service hosted at https://api.withpi.ai.
+authentication:
+  style: api-key
+  transport: Authorization bearer header
+  env_var: WITHPI_API_KEY
+  ref: authentication/pi-labs-authentication.yml
+transport:
+  protocol: https
+  base_url: https://api.withpi.ai
+  content_type: application/json
+  openapi_compatible: true
+sdk:
+  clients: [PiClient]
+  languages: [python, typescript]
+  async_support: true          # Python + TS clients ship sync and async variants (httpx)
+  ref: packages/pi-labs-packages.yml
+idempotency:
+  supported: false             # No idempotency-key header documented in the public docs
+pagination:
+  documented: false            # No cursor/offset pagination documented for the scoring surface
+versioning:
+  scheme: rolling
+  changelog: https://withpi.ai/release-notes
+  ref: changelog/pi-labs-changelog.yml
+error_envelope:
+  documented: false            # No public RFC 9457 / problem+json error reference located
+core_operations:
+  - resource: scoring_system
+    method: score
+    description: >-
+      Score an llm_input / llm_output pair against a scoring_spec (an array of
+      natural-language questions) and return per-question scores plus a
+      total_score. Deterministic ~200ms foundation-model scorer.
+notes: >-
+  Absence of a documented idempotency key and pagination is recorded data, not
+  a fabricated negative — the public docs surface only the scoring/optimization
+  endpoints. No Idempotency canonical pointer is emitted because no idempotency
+  contract is published.

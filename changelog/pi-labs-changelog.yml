@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://withpi.ai/release-notes
+url: https://withpi.ai/release-notes
+scheme: rolling
+notes: >-
+  Pi Labs publishes a dated "Release Notes" changelog at
+  https://withpi.ai/release-notes covering scoring-model, SDK, and copilot
+  updates. The official SDKs (npm withpi, pypi withpi) are released frequently
+  and track the API version. Individual dated entries were not captured verbatim
+  because the withpi.ai host is not directly reachable from this run; the live
+  release-notes page is the source of truth.
+sdk_versions:
+  - registry: npm
+    name: withpi
+    version_seen: 1.44.1
+    as_of: '2026-07-20'
+  - registry: pypi
+    name: withpi
+    version_seen: 1.67.0
+    as_of: '2026-07-20'
+entries: []

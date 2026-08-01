@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://code.withpi.ai/quickstart
+docs: https://code.withpi.ai/quickstart
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+notes: >-
+  Pi Labs (Pi Client) authenticates every REST request with a single API key.
+  The official SDKs read the key from the WITHPI_API_KEY environment variable
+  (e.g. PiClient(api_key=os.environ["WITHPI_API_KEY"])) and send it as a bearer
+  token on the Authorization header. A free API key is issued from the Pi Labs
+  account page. No OAuth2 / OpenID Connect / scope surface is documented, so
+  there is no scopes/ artifact for this provider.
+schemes:
+  - name: apiKey
+    type: apiKey
+    in: header
+    key_name: Authorization
+    scheme: bearer
+    env_var: WITHPI_API_KEY
+    sources: [https://code.withpi.ai/quickstart]

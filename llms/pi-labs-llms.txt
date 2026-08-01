@@ -1,0 +1,26 @@
+# Pi Labs
+
+> Pi Labs (withpi.ai) is an applied-AI company, backed by Accel and later acquired by Microsoft, that builds tools to evaluate and enhance AI applications. Its core product is Pi Scorer — a deterministic, ~200ms foundation-model scorer that judges any text against a rubric of natural-language questions (500x more efficient than LLM-as-a-judge) — exposed as an OpenAPI-compatible REST API with official Python and TypeScript SDKs.
+
+## APIs
+
+- [Pi Scoring API](https://code.withpi.ai): OpenAPI-compatible REST API at https://api.withpi.ai for scoring, calibrating, and optimizing LLM outputs against rubrics. API-key auth via the WITHPI_API_KEY header.
+
+## SDKs
+
+- [withpi (Python)](https://pypi.org/project/withpi/): Official Python SDK — `pip install withpi`, sync + async clients (httpx).
+- [withpi (TypeScript)](https://www.npmjs.com/package/withpi): Official TypeScript/Node SDK — `npm install withpi`.
+
+## Docs
+
+- [Introduction](https://code.withpi.ai/introduction): Overview of the Pi scoring platform and REST API.
+- [Quickstart](https://code.withpi.ai/quickstart): Get an API key and run your first scoring_system.score call.
+- [Scoring API / Solutions](https://withpi.ai/solutions/api): Product page for the scoring API.
+- [Release Notes](https://withpi.ai/release-notes): Dated changelog of model, SDK, and copilot updates.
+
+## Artifacts
+
+- [Packages](https://github.com/api-evangelist/pi-labs/blob/main/packages/pi-labs-packages.yml): Official npm + PyPI SDK catalog.
+- [Authentication](https://github.com/api-evangelist/pi-labs/blob/main/authentication/pi-labs-authentication.yml): API-key auth profile.
+- [Conventions](https://github.com/api-evangelist/pi-labs/blob/main/conventions/pi-labs-conventions.yml): Cross-cutting request/response conventions.
+- [Agent Skill: Score an LLM output](https://github.com/api-evangelist/pi-labs/blob/main/skills/pi-labs-score-llm-output.md): Packaged operating instructions for the scorer.

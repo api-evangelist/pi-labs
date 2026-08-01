@@ -1,0 +1,8 @@
+generated: '2026-07-20'
+method: generated
+source: https://code.withpi.ai/quickstart
+skills:
+  - file: pi-labs-score-llm-output.md
+    name: Score an LLM output with Pi Labs
+    api: https://api.withpi.ai
+    operations: [scoring_system.score]
