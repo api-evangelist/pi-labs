@@ -50,7 +50,7 @@ tags:
 - Evaluation
 - LLM
 - Scoring
-- Machine-Learning
+- Machine Learning
 - Developer Tools
 tags_raw:
 - Company
@@ -60,6 +60,7 @@ tags_raw:
 - Scoring
 - Machine Learning
 - Developer Tools
+- Machine-Learning
 apis:
 - name: Pi Scoring API
   description: >-
