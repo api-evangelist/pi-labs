@@ -64,6 +64,52 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pi Labs is a company surfaced as a portfolio company of accel and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.
+Pi Labs (withpi.ai) is an applied-AI company, backed by Accel and later acquired by Microsoft, that builds tooling to evaluate and enhance AI applications. Its core product, Pi Scorer, is a deterministic, roughly 200ms foundation model that scores any text against a rubric of natural-language questions — reported to be about 500x more efficient than using an LLM as a judge. Teams use it to calibrate rubrics, gate and rank LLM outputs, and close the loop across training, inference, and feedback. The scoring engine is exposed as an OpenAPI-compatible REST API at api.withpi.ai with official Python and TypeScript SDKs (both published as "withpi"), a copilot for building scoring specs, and a Promptfoo integration (Pi Scorer).
 
-Backed by: accel
+**Areas:** Company · Artificial Intelligence · Evaluation · LLM · Scoring · Machine Learning · Developer Tools
+
+## Pi Labs on APIs.io
+
+Everything profiled for Pi Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pi-labs/](https://apis.io/providers/pi-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Pi Scoring API](https://apis.io/apis/pi-labs/pi-scoring-api/) — OpenAPI-compatible REST API for scoring, calibrating, and optimizing LLM outputs against rubrics of natural-language questions. Authenticated with an API…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pi Labs Authentication](https://apis.io/security/pi-labs/pi-labs-authentication/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://code.withpi.ai)
+- [Getting started](https://code.withpi.ai/quickstart)
+- [API reference](https://code.withpi.ai)
+- [Changelog](https://withpi.ai/release-notes)
+- [GitHub](https://github.com/withpi)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pi Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pi-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
